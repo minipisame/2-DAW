@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE> New Document </TITLE>
+<META NAME="Generator" CONTENT="EditPlus">
+<META NAME="Author" CONTENT="">
+<META NAME="Keywords" CONTENT="">
+<META NAME="Description" CONTENT="">
+<script  src= "javaprueba.js"> </script>
+</HEAD>
+
+<BODY >
+	<style> p {
+    width: 200px;
+    height: 100px;
+
+}>
+
+	</style>
+
+
+<p onmousemove='agrandar(this)' onmouseout='disminuir(this)' >Hola este texto se puede agrandar</p>
+<p   onmousemove='agrandar(this)' onmouseout='disminuir(this)' >Hola este texto se puede agrandar</p>
+<p   onmousemove='agrandar(this)' onmouseout='disminuir(this)' >Hola este texto se puede agrandar</p>
+<p   onmousemove='agrandar(this)' onmouseout='disminuir(this)' >Hola este texto se puede agrandar</p>
+
+<button onclick="izquierda(event)">Izquierda</button>
+<button onclick="justify(event)">Justify</button>
+	<script>
+var myElement = document.querySelectorAll("p");
+function agrandar(x) {
+
+	for (var i = 0; i < myElement.length; i++) {
+    myElement[i].style.fontSize = "large";
+}
+   //document.getElementById("p").style.fontSize = "30px";
+}
+
+function disminuir(x) {
+
+		for (var i = 0; i < myElement.length; i++) {
+    myElement[i].style.fontSize = "initial";
+}
+  // document.getElementById("p").style.fontSize = "12px";
+}
+function izquierda(x) {
+
+for (var i = 0; i < myElement.length; i++) {
+ myElement[i].style.textAlign = "left";
+}
+}
+function justify(x) {
+
+for (var i = 0; i < myElement.length; i++) {
+ myElement[i].style.textAlign = "justify";
+}
+}
+
+
+</script>
+</BODY>
+</HTML>

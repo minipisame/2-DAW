@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+       /* Set the size of the div element that contains the map */
+      #map {
+        height: 400px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }
+    </style>
+  </head>
+  <body>
+    <h3>My Google Maps Demo</h3>
+    <!--The div element for the map -->
+    <div id="map"></div>
+    <script>
+// Initialize and add the map
+function success(pos) {
+ var pos = {
+
+             lati: pos.coords.latitude,
+             lng: pos.coords.longitude
+            };
+   // The location of my Positiion
+  var myPosition = {lat: pos.lati, lng: pos.lng};
+  // The map, centered at my position
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 17, center: myPosition});
+  // The marker, positioned at my Position
+  var marker = new google.maps.Marker({position: myPosition, map: map});
+}
+
+function initMap() {
+
+ navigator.geolocation.getCurrentPosition(success) ;
+}
+           
+
+ 
+
+    </script>
+     <script async defer
+
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB55b3EOysI5WYazs3KoCsPYq9AO6WyPkI&callback=initMap">
+
+    </script>
+
+      </body>
+</html>

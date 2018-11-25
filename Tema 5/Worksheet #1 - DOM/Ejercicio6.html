@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE> New Document </TITLE>
+<META NAME="Generator" CONTENT="EditPlus">
+<META NAME="Author" CONTENT="">
+<META NAME="Keywords" CONTENT="">
+<META NAME="Description" CONTENT="">
+
+</HEAD>
+
+<BODY >
+	
+<img  src="https://esports.eldesmarque.com/wp-content/uploads/2017/02/maxresdefault-2.jpg" width="304" height="228" />
+<img hidden src="https://img.depor.com/files/ec_article_multimedia_gallery/uploads/2017/12/26/5a4280a70a7db.jpeg" width="304" height="228" />
+<img  hidden src="https://img.depor.com/files/article_main/uploads/2018/08/21/5b7c6a1c092e0.jpeg" width="304" height="228" />
+</br>
+<button id="siguiente" onclick="Siguiente()" /> Siguiente  </button>
+<button id="anterior" onclick="Anterior()" /> Anterior </button>
+
+<script type="text/javascript">
+	
+	var contador = 0;
+
+
+	function Siguiente(){
+		if(contador == document.getElementsByTagName("img").length -1){
+
+		}
+		else{
+			document.getElementsByTagName("img")[contador].setAttribute("hidden","true");
+			contador++;
+			document.getElementsByTagName("img")[contador].removeAttribute("hidden");
+		
+
+		}
+
+
+	}
+	function Anterior(){
+		if(contador == 0){
+
+		}
+		else{
+				document.getElementsByTagName("img")[contador].setAttribute("hidden","true");
+			contador--;
+			document.getElementsByTagName("img")[contador].removeAttribute("hidden");
+
+		}
+	}
+
+</script>
+</BODY>
+</HTML>

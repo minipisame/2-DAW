@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE> New Document </TITLE>
+<META NAME="Generator" CONTENT="EditPlus">
+<META NAME="Author" CONTENT="">
+<META NAME="Keywords" CONTENT="">
+<META NAME="Description" CONTENT="">
+
+</HEAD>
+
+<BODY >
+<p id="cantidad"	></p>
+<p id="direccion"	></p>
+
+<p id="cantidadG"	></p>
+<p id="tercer"	></p>
+
+<p> <a href="https://www.google.com">Google</a> </p>
+<p><a href="https://github.com/">Enlace a Github</a></p>
+<p><a href="https://html.com/attributes/a-href/">Html atrribute</a></p>
+<script>
+var enlaces = document.getElementsByTagName("a");
+var enlaces2 = document.getElementsByTagName("p")[6];
+
+cantidad.innerHTML = enlaces.length;
+var dir = enlaces[1];
+direccion.innerHTML = dir;
+var contador=0;
+for(var i=0; i<=enlaces.length;i++){
+	if(enlaces[i]=="https://www.google.com/"){
+		contador++;
+	}
+}
+cantidadG.innerHTML = contador;
+tercer.innerHTML = enlaces2.getElementsByTagName("a").length;
+
+</script>
+</BODY>
+</HTML>

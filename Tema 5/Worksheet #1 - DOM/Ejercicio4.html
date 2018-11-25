@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Characters</title>
+    <style>
+       
+    </style>
+</head>
+
+<body>
+    <h1>Characters</h1>
+    <h2>Middlemarch</h2>
+    <h3>George Eliot</h3>
+    <ol id="middlemarch">
+        <li  class="women" id="negrita">Dorothea Brooke</li>
+        <li class="women">Celia Brooke</li>
+        <li class="men">Edward Casaubon</li>
+        <li class="men">Sir James Chettam</li>
+        <li class="men" id="Jos">Joshua Rigg</li>
+        <li class="men">Will Ladislaw</li>
+        <li class="men">Tertius Lydgate</li>
+        <li class="women">Rosamond Vincy</li>
+    </ol>
+
+    <input type="text" id="tex"/>
+    <button id="introducir" onclick="NuevaLinea(document.getElementById('tex').value)">Introducir nueva linea
+</body>
+</html>
+<script>
+function NuevaLinea(texto){
+    middlemarch.innerHTML =  middlemarch.innerHTML + "<li> " + texto + "</li>";
+}
+</script>
+
